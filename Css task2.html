@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS TASKS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        fieldset {
+            width: 600px;
+            border: 2px solid #333;
+            border-radius: 20px;
+            padding: 20px;
+            margin: 50px auto;
+            background-color: #fff;
+        }
+
+        legend {
+            border: 2px solid #333;
+            border-radius: 40px;
+            padding: 5px 20px;
+            background-color: #fff;
+        }
+
+        .vertical-menu {
+            width: 300px;
+            margin-top: 20px;
+        }
+
+        .vertical-menu a {
+            background-color: #eee;
+            color: #333;
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .vertical-menu a:hover {
+            background-color: #ccc;
+        }
+
+        .vertical-menu a.active {
+            background-color: #e59f2f;
+            color: #fff;
+        }
+
+        ul.horizontal-menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #c8c4c4;
+        }
+
+        ul.horizontal-menu li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        ul.horizontal-menu li a {
+            display: inline-block;
+            color: rgb(42, 26, 148);
+            padding: 10px 16px;
+            text-decoration: none;
+            border: 1px solid #333;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+
+        ul.horizontal-menu li a:hover {
+            background-color: #4d4d4d;
+            color: white;
+        }
+
+        .homebutton {
+            border: 1px solid #333;
+            background-color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: block;
+            width: 100px;
+            text-align: center;
+            margin: 20px auto;
+            color: #333;
+        }
+
+        .homebutton:hover {
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>CSS</legend>
+        <h2>TASK - 2</h2>
+        <h2>NAV BARS</h2>
+        <div class="vertical-menu">
+            <h2>VERTICAL NAV BAR</h2>
+            <a href="home.html" class="active">Home</a>
+            <a href="java.html">Java</a>
+            <a href="css.html">CSS</a>
+            <a href="html.css">HTML</a>
+            <a href="bootstrap.html">Bootstrap</a>
+        </div>
+
+        <div class="horizontal">
+            <h2>HORIZONTAL NAV BAR</h2>
+            <ul class="horizontal-menu">
+                <li><a href="home.html" class="active">Home</a></li>
+                <li><a href="java.html">Java</a></li>
+                <li><a href="css.html">CSS</a></li>
+                <li><a href="html.css">HTML</a></li>
+            </ul>
+        </div>
+        
+    <button onclick="redirectToTasks()" align="center" >Go to Tasks</button>
+    <script>
+        function redirectToTasks() {
+            // You can specify the URL to which you want to redirect here
+            window.location.href = 'index.html';
+        }
+    </script>
+
+    </fieldset>
+</body>
+</html>
